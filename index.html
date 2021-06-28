@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts (Roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles\styles.css">
+
+    <title>DevriX Project</title>
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid desktop-nav" id="desktop-nav">
+            <div class="row">
+                <div class="col-7">
+                    <h1><a href="#">My Logo</a></h1>
+                </div>
+                <div class="col-5 ml-auto mt-lg-0">
+                    <ul class="list-inline">
+                        <li class="list-inline-item social-icons">
+                            <a href="#" class="nav-link facebook"><i class="fa fa-facebook fa-lg"></i></a>
+                        </li>
+                        <li class="list-inline-item social-icons">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+                        </li>
+                        <li class="list-inline-item social-icons">
+                            <a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+                        </li>
+                        <li class="list-inline-item social-icons">
+                            <button class="subscribe-btn">Subscribe for more</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom bottom-nav">
+            <a class="navbar-brand mobile" href="#">My Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse text-center justify-content-center flex-md-column" id="navbarTogglerDemo02">
+                <ul class="nav navbar-nav mr-auto mt-lg-0 navigation-menu">
+                    <!-- Start Article Links -->
+                    <li>
+                        <a href="#news-section" class="nav-link link-title first-link">News</a>
+                    </li>
+                    <li>
+                        <a href="#sex-section" class="nav-link link-title">Sex</a>
+                    </li>
+                    <li>
+                        <a href="#special-features-section" class="nav-link link-title second-link">Special Features</a>
+                    </li>
+                    <li>
+                        <a href="#technology-section" class="nav-link link-title third-link">Technology</a>
+                    </li>
+                    <li>
+                        <a href="#sport-section" class="nav-link link-title">Sport</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-title fourth-link">Analysis</a>
+                    </li>
+                    <!-- End Article Links -->
+                    <!-- Start weather and search icon -->
+                    <li>
+                        <!-- weather widget start 
+                        Decided to insert the widget to simplify the code, my first choice to insert a weather widget from 
+                        https://weatherwidget.io/ because it has the best looking design and is also animated but due the page 
+                        design I couldn't insert it as it does not fit the look of the web page-->
+                        <!-- Start WX Widget Code -->
+                        <a href="https://www.weatherwx.com/forecasts/bg/sofia.html" class="weather-widget" target="_blank">
+                            <img src="https://www.weatherwx.com/fetch-images.php?forecast=zandh&place=sofia&state=&country=bg&config=png&alt=hwitransparentcolors3met&hwvbg=transparent&hwvtc=000000" 
+                            alt="Click for the latest Sofia weather forecast.">
+                        </a>
+                            <!-- End WX Widget Code -->
+                    </li>
+                    <li>
+                        <form id="search-bar">
+                                <input type="search" placeholder="Search" 
+                                style="background-image: url('images/search.png');">
+                        </form>
+                    </li>
+                    <ul class="list-inline mobile">
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link facebook"><i class="fa fa-facebook fa-lg"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+                        </li>
+                    </ul>
+                    <!-- End weather and search icon -->
+                    <li>
+                        <button class="subscribe-btn mobile">Subscribe for more</button>
+                    </li>
+                    <!-- End Social Links -->
+                </ul> 
+            </div>
+        </nav>
+    </header>
+<!-- Start main news section -->
+    <section class="main-news">
+        <div class="container-fluid first-container">
+            <div class="row">
+                <div class="big-news col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="images/backgroundImg.png" class="background-img" alt="backgroundImg">
+                    <a href="#"><img src="images/carImage.png" class="car-img" alt="carImage"></a>
+                    <!-- Wasn't sure if the fetured was meant to be a button or act more of an image so I made it into
+                    a button but it can easily be made to blend into the image by changing it into a div -->
+                    <button class="featured-button" type="button" role="button" value="featured"><svg width="20" 
+                        height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0625 6.39075L12.9297 5.65247L10.6094 0.976685C10.2227 0.168091 
+                        9.02734 0.132935 8.60547 0.976685L6.32031 5.65247L1.15234 6.39075C0.238281 
+                        6.53137 -0.113281 7.65637 0.554688 8.32434L4.24609 11.9454L3.36719 
+                        17.0431C3.22656 17.9572 4.21094 18.6603 5.01953 18.2384L9.625 15.8126L14.1953 
+                        18.2384C15.0039 18.6603 15.9883 17.9572 15.8477 17.0431L14.9688 11.9454L18.6602 
+                        8.32434C19.3281 7.65637 18.9766 6.53137 18.0625 6.39075ZM13.1406 11.3478L13.9844 
+                        16.1993L9.625 13.9142L5.23047 16.1993L6.07422 11.3478L2.52344 7.90247L7.41016 
+                        7.19934L9.625 2.76965L11.8047 7.19934L16.6914 7.90247L13.1406 11.3478Z" fill="#D24545"/>
+                        </svg>
+                        FEATURED</button>
+                    <h2 class="main-headline">
+                        <a href="#">Malaria vaccine to be tested on 4,800  children — UK scientist</a>
+                    </h2>
+                    <p class="main-subtext">Accusamus dolores quia dolorem quidem a suscipit molestias expedita et. 
+                        Est cum molestiae. Eligendi dolores sint quia velit velit qui odio ab.</a></p>
+                    <button class="read-button" type="button" role="button" value="Read more">Read more</button>
+                </div>
+                <div class="news-articles col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <h4>LATEST NEWS</h4>
+                    <ul>
+                        <li>
+                            <h5><a href="#">Doloremque ullam sed doloribus ut asperiores et sed in ut.</a></h5> 
+                            <p>Adebayo Folorunsho-Francis - Dec 7, 2020</p>
+                            <hr class="list-divider">
+                        </li>
+                        <li>
+                            <h5><a href="#">Repellendus vel quisquam rerum iusto id quibusdam et est labore.</a></h5>
+                            <p>Adebayo Folorunsho-Francis -Dec 7, 2020</p>
+                            <hr class="list-divider">
+                        </li>
+                        <li>
+                            <h5><a href="#">Et dignissimos et autem voluptas et exercitationem eveniet eos voluptas.</a></h5>
+                            <p>Tessy Igomu -Dec 7, 2020</p>
+                            <hr class="list-divider">
+                        </li>
+                        <li>
+                            <h5><a href="#">Tempore sed necessitatibus quae fugit consequatur qui laboriosam est eum.</a></h5>
+                            <p>Adebayo Folorunsho-Francis - Dec 7, 2020</p>
+                            <hr class="list-divider">
+                        </li>
+                        <li>
+                            <h5><a href="#">Quaerat maxime placeat laboriosam odit ut animi aut laudantium.</a></h5>
+                            <p>Adebayo Folorunsho-Francis - Dec 7, 2020</p>
+                        </li>
+                    </ul> 
+                    <a href="#" class="see-news">See all latest news <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.66406 0.748657L6.96094 1.41663C6.78516 1.59241 6.78516 1.87366 6.96094 2.01428L12.4102 7.4635H0.421875C0.175781 7.4635 0 7.67444 0 7.88538V8.86975C0 9.11584 0.175781 9.29163 0.421875 9.29163H12.4102L6.96094 14.776C6.78516 14.9166 6.78516 15.1979 6.96094 15.3737L7.66406 16.0416C7.80469 16.2174 8.08594 16.2174 8.26172 16.0416L15.6094 8.69397C15.7852 8.51819 15.7852 8.27209 15.6094 8.09631L8.26172 0.748657C8.08594 0.572876 7.80469 0.572876 7.66406 0.748657Z" fill="black"/>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of main news section -->
+
+<!-- Start of secondary news section -->
+    <section class="secondary-news">
+        <div class="container-fluid second-container">
+            <div class="row">
+                <div class="news-box-1 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box">
+                        <h4><a href="#">WHO launches ‘infodemic alliance’ to fight COVID-19 misinformation in Africa</a></h4>
+                        <p>Yusuff Moshood - Dec 3, 2020</p>
+                    </div>
+                    <div class="second-box">
+                        <h4><a href="#">This whitening cream can ruin your skin, make you blind, NAFDAC, others warn</a></h4>
+                        <p>Yusuff Moshood - December 3, 2020</p>
+                    </div>
+                </div>
+                <div class="news-box-2 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="first-box">
+                        <h4><a href="#">WHO launches ‘infodemic alliance’ to fight COVID-19 misinformation in Africa</a></h4>
+                        <p>Yusuff Moshood - Dec 3, 2020</p>
+                    </div>
+                    <div class="second-box">
+                        <h4><a href="#">This whitening cream can ruin your skin, make you blind, NAFDAC, others warn</a></h4>
+                        <p>Yusuff Moshood - December 3, 2020</p>
+                    </div>
+                </div>
+                <div class="news-box-2 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                    <a href="#"><img src="images/redPlant.png" class="red-plant" alt="plant"></a>
+                    <button class="breaking-button" type="button" role="button" value="featured"><svg width="17" 
+                        height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.83594 16.1526L9.53906 15.4846C9.71484 15.3088 9.71484 15.0276 9.53906 
+                        14.887L4.08984 9.43774L16.0781 9.43774C16.3242 9.43774 16.5 9.22681 16.5 9.01587L16.5 
+                        8.03149C16.5 7.7854 16.3242 7.60962 16.0781 7.60962L4.08984 7.60962L9.53906 2.12524C9.71485 
+                        1.98462 9.71485 1.70337 9.53906 1.52759L8.83594 0.859618C8.69531 0.683837 8.41406 0.683837 
+                        8.23828 0.859618L0.890626 8.20727C0.714845 8.38306 0.714845 8.62915 0.890626 
+                        8.80493L8.23828 16.1526C8.41406 16.3284 8.69531 16.3284 8.83594 16.1526Z" fill="#D24545"/>
+                        </svg>
+                        
+                        BREAKING</button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+    </section> 
+<!-- End Secondary news section -->
+
+<!-- Start of news section -->
+    <section class="news-inner-section" id="news-section">
+        <div class="container-fluid third-container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h3 class="section-title">NEWS</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="news-section-col-1 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    
+                    <div class="top-box">
+                        <img src="images/bicyclist.png" class="bicyclist" alt="bicyclist">
+                        <h4><a href="#">Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                    <div class="bottom-box">
+                        <img src="images/halfBlue.png" class="half-blue" alt="half blue">
+                        <h4><a href="#">Asperiores sapiente alias voluptas quasi ratione quae dolorem.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                </div>
+                <div class="news-section-col-2 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="top-box">
+                        <img src="images/dog.png" class="dog-img" alt="Dog">
+                        <h4><a href="#">Non ut ut nobis.</a></h4>
+                        <p>Nov 9, 2020</p>
+                    </div>
+                    <div class="bottom-box">
+                        <img src="images/painter.png" class="painter" alt="painter tools">
+                        <h4><a href="#">Adipisci distinctio quisquam id non vero vel molestiae delectus debitis.</a></h4>
+                        <p>Nov 9, 2020</p>
+                    </div>
+                </div>
+                <div class="news-section-col-3 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="images/match.png" class="matches" alt="Match box">
+                    <h4><a href="#">At doloremque id voluptatum dignissimos unde est voluptatem.</a></h4>
+                    <p class="sub-text-1">Adebayo Folorunsho-Francis - Dec 3, 2020</p>
+                    <p class="sub-text-2">Sit voluptatum suscipit sunt sed ut ratione alias. Dolorem culpa alias quos. 
+                        Aliquid iusto laboriosam alias. Optio ullam molestiae et non repellendus sit iste.
+                    </p>
+                    <a href="#" class="more-reading">Continue reading this article <svg width="16" height="17" 
+                        viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.66406 0.813477C7.875 0.625977 8.07422 0.625977 8.26172 
+                        0.813477L15.6094 8.19629C15.8203 8.38379 15.8203 8.57129 15.6094 8.75879L8.26172 
+                        16.1416C8.07422 16.3291 7.875 16.3291 7.66406 16.1416L6.96094 15.4385C6.89062 
+                        15.3682 6.85547 15.2744 6.85547 15.1572C6.85547 15.04 6.89062 14.9346 6.96094 
+                        14.8408L12.4102 9.3916H0.421875C0.140625 9.3916 0 9.25098 0 8.96973V7.98535C0 
+                        7.7041 0.140625 7.56348 0.421875 7.56348H12.4102L6.96094 2.11426C6.77344 
+                        1.90332 6.77344 1.7041 6.96094 1.5166L7.66406 0.813477Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+<!-- End of news section -->
+
+<!-- Start of sex section -->
+    <section class="sex-news-section" id="sex-section">
+        <div class="container-fluid fourth-container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h3 class="section-title">SEX</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sex-section-col-1 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-1">
+                        <img src="images/couch.png" class="couch" alt="couch">
+                        <h4><a href="#">Magnam quos enim aut ut ex veniam aut commodi sit.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                </div>
+                <div class="sex-section-col-2 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-2">
+                        <img src="images/attendant.png" class="attendant" alt="attendant">
+                        <h4><a href=#>Voluptatibus eius autem veritatis est architecto aperiam praesentium.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                </div>
+                <div class="sex-section-col-3 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-3">
+                        <img src="images/blueGrid.png" class="blue-grid" alt="blue grid">
+                        <h4><a href="#">Non dolorem corporis ducimus alias molestiae vero beatae amet.</a></h4>
+                        <p>Nov 9, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+    </section>
+<!-- End of sex section -->
+
+<!-- Start of technology section -->
+    <section class="technology-news-section" id="technology-section">
+        <div class="container-fluid fifth-container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h3 class="section-title">TECHNOLOGY</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="technology-section-col-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="images/headshot.png" class="headshot" alt="Headshot image">
+                    <h4><a href="#">Atque necessitatibus ipsa molestiae aspernatur et recusandae.</a></h4>
+                    <p class="sub-text-1">Lara Adejoro - Jan 14, 2020</p>
+                    <p class="sub-text-2">Ab soluta et tempora laborum et rem. Autem beatae cupiditate consequatur 
+                        aliquid aut inventore et totam quam. Quo voluptatum quia. Non dolore laborum inventore 
+                        vel quia est aut deserunt.
+                    </p>
+                    <a href="#" class="more-reading">Continue reading this article <svg width="16" height="17" 
+                        viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.66406 0.813477C7.875 0.625977 8.07422 0.625977 8.26172 
+                        0.813477L15.6094 8.19629C15.8203 8.38379 15.8203 8.57129 15.6094 8.75879L8.26172 
+                        16.1416C8.07422 16.3291 7.875 16.3291 7.66406 16.1416L6.96094 15.4385C6.89062 
+                        15.3682 6.85547 15.2744 6.85547 15.1572C6.85547 15.04 6.89062 14.9346 6.96094 
+                        14.8408L12.4102 9.3916H0.421875C0.140625 9.3916 0 9.25098 0 8.96973V7.98535C0 
+                        7.7041 0.140625 7.56348 0.421875 7.56348H12.4102L6.96094 2.11426C6.77344 
+                        1.90332 6.77344 1.7041 6.96094 1.5166L7.66406 0.813477Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="technology-section-col-2 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="top-box">
+                        <img src="images/desert.png" class="desert" alt="desert">
+                        <h4><a href="#">Et veniam dolorem sed omnis quidem.</a></h4>
+                        <p>Jan 8, 2020</p>
+                    </div>
+                    <div class="bottom-box">
+                        <img src="images/dancing.png" class="dancing" alt="Dancing woman">
+                        <h4><a href="#">Cupiditate sunt necessitatibus neque placeat.</a></h4>
+                        <p>Oct 25, 2020</p>
+                    </div>
+                </div>
+                <div class="technology-section-col-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="top-box">
+                        <img src="images/bookShelf.png" class="book-shelf" alt="Book shelf">
+                        <h4><a href="#">Laborum nemo est ea eligendi aut ut ut expedita.</a></h4>
+                        <p>Jan 6, 2020</p>
+                    </div>
+                    <div class="bottom-box">
+                        <img src="images/oldCouple.png" class="old-couple" alt="Old couple">
+                        <h4><a href="#">Molestiae optio eveniet numquam optio molestias dolor ut.</a></h4>
+                        <p>Oct 18, 2020</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+<!-- End of technology section -->
+
+<!-- Start of sport section -->
+    <section class="sport-news-section" id="sport-section">
+        <div class="container-fluid sixth-container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h3 class="section-title">SPORT</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sport-section-col-1 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="box-1">
+                        <img src="images/greyCouch.png" class="grey-couch" alt="Grey couch">
+                        <h4><a href="#">Eligendi ut ut.</a></h4>
+                        <p>Oct 25, 2020</p>
+                    </div>
+                </div>
+                <div class="sport-section-col-2 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="box-2">
+                        <img src="images/beach.png" class="beach" alt="beach">
+                        <h4><a href=#>Laborum facilis libero.</a></h4>
+                        <p>Oct 25, 2020</p>
+                    </div>
+                </div>
+                <div class="sport-section-col-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="box-3">
+                        <img src="images/building.png" class="building" alt="building">
+                        <h4><a href="#">Qui corrupti quo dolor id excepturi optio quis.</a></h4>
+                        <p>Oct 25, 2020</p>
+                    </div>
+                </div>
+                <div class="sport-section-col-4 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="box-4">
+                        <img src="images/coffee.png" class="coffee" alt="Coffee beans">
+                        <h4><a href="#">Illo voluptatem autem veritatis doloribus facilis.</a></h4>
+                        <p>Oct 25, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of sport section -->
+
+<!-- Start of special features section -->
+    <section class="special-features-section" id="special-features-section">
+        <div class="container-fluid seventh-container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <h3 class="section-title">SPECIAL FEATURES</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="special-features-col-1 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-1">
+                        <img src="images/hivAndAidsPoster.png" class="hiv-poster" alt="HIV poster">
+                        <h4><a href="#">Enim voluptatem architecto aut.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                </div>
+                <div class="special-features-col-2 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-2">
+                        <img src="images/arms.png" class="arms" alt="arms">
+                        <h4><a href=#>Officia soluta nulla cumque eos aut.</a></h4>
+                        <p>Dec 1, 2020</p>
+                    </div>
+                </div>
+                <div class="special-features-col-3 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="box-3">
+                        <img src="images/hiv101.png" class="hiv-101" alt="HIV 101">
+                        <h4><a href="#">Minus est dolore ad consequuntur.</a></h4>
+                        <p>Dec 2, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of specila features section -->  
+
+<footer>
+    <!-- Had to create two different menus due to the fact that using bootstrap columns and rows doesn't work as it
+    supposed to after attempting different solutions this happened to be the best option to make it look clean  -->
+    <ul class="list-inline footer-desktop"> 
+        <li class="list-inline-item">
+            <h3><a href="#">L</a></h3>
+        </li>
+        <li class="list-inline-item">
+            <a href="#news-section" class="nav-link link-title first-link">News</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#sex-section" class="nav-link link-title">Sex</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#special-features-section" class="nav-link link-title second-link">Special Features</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#technology-section" class="nav-link link-title third-link">Technology</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#sport-section" class="nav-link link-title">Sport</a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" class="nav-link link-title fourth-link">Analysis</a>
+        </li>
+        <li class="list-inline-item">
+            <span class="copyright">Project <i class="fa fa-copyright" aria-hidden="true"> 2021</i></span>
+        </li>
+        <li class="list-inline-item social-icons">
+            <a href="#" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a>
+        </li>
+        <li class="list-inline-item social-icons">
+            <a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+        <li class="list-inline-item social-icons">
+            <a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+        </li>
+    </ul>
+
+    <ul class="footer-mobile text-center justify-content-center">
+        <li><h3><a href="#">L</a></h3></li>
+        <li><a href="#" class="nav-link link-title first-link">News</a></li>
+        <li><a href="#" class="nav-link link-title">Sex</a></li>
+        <li><a href="#" class="nav-link link-title second-link">Special Features</a></li>
+        <li><a href="#" class="nav-link link-title third-link">Technology</a></li>
+        <li><a href="#" class="nav-link link-title">Sport</a></li>
+        <li><a href="#" class="nav-link link-title fourth-link">Analysis</a></li>
+        <li><span class="copyright">Project <i class="fa fa-copyright" aria-hidden="true"> 2021</i></span></li>
+        <ul class="list-inline">
+            <li class="list-inline-item social-icons">
+                <a href="#" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a>
+            </li>
+            <li class="list-inline-item social-icons">
+                <a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+            </li>
+            <li class="list-inline-item social-icons">
+                <a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a>
+            </li>
+        </ul>
+    </ul>    
+</footer>
+</body>
+</html>
